@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooking Classes - Annapoorna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .class-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .class-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .class-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .class-card:hover {
+      transform: scale(1.03);
+    }
+
+    .class-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .class-content {
+      padding: 20px;
+    }
+
+    .class-content h3 {
+      margin-top: 0;
+      color: #ff6600;
+    }
+
+    .class-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .class-content button {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .class-content button:hover {
+      background-color: #e65c00;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cooking Classes at Annapoorna</h1>
+    <p>Learn authentic South Indian recipes from the experts in Palani!</p>
+  </header>
+
+  <section class="class-section">
+    <div class="class-grid">
+
+      <!-- Class 1 -->
+      <div class="class-card">
+        <img src="https://sagarkitchen.com/wp-content/uploads/2023/06/idli-sambar-recipe-sagar-kitchen.jpg" alt="Idli & Sambar Class">
+        <div class="class-content">
+          <h3>Mastering Idli & Sambar</h3>
+          <p>Learn the art of making soft idlis and flavorful sambar, the staple breakfast of South India.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 2 -->
+      <div class="class-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.jeB_VJfUfaTU0eV28GYMQQHaEK?pid=Api&P=0&h=180" alt="Dosa Making Class">
+        <div class="class-content">
+          <h3>Crispy Dosa Workshop</h3>
+          <p>Discover the secrets to creating golden crispy dosas with delicious chutneys and masala fillings.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 3 -->
+      <div class="class-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.ytOgC490bYDPVjdI_0BJewHaEn?pid=Api&P=0&h=180" alt="Tamil Meals Class">
+        <div class="class-content">
+          <h3>Traditional Tamil Meals</h3>
+          <p>A complete course on making sambar, rasam, kootu, poriyal, and rice—all on a banana leaf.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 4 -->
+      <div class="class-card">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-sweets-arranged-on-a-plate-in-the-style-of-indian-dolls-image_2928010.jpg" alt="Sweet Class">
+        <div class="class-content">
+          <h3>South Indian Sweets</h3>
+          <p>Learn to make divine desserts like payasam, adhirasam, and gulab jamun with ease.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 5 -->
+      <div class="class-card">
+        <img src="https://images.boldsky.com/fit-in/600x338/img/2014/08/27-1409140029-meduvada.jpg" alt="Vada Class">
+        <div class="class-content">
+          <h3>Perfecting Medu Vada</h3>
+          <p>Learn to make crispy outside, soft inside medu vadas — the pride of Tamil breakfasts.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 6 -->
+      <div class="class-card">
+        <img src="https://images.slurrp.com/prodarticles/zycokwmck5r.webp" alt="Pongal Class">
+        <div class="class-content">
+          <h3>Ven Pongal & Gotsu</h3>
+          <p>Master this simple yet soulful combo, commonly served in Tamil temples and homes.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 7 -->
+      <div class="class-card">
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2020/03/poori-masala-kizhangu-585x390.jpg" alt="Poori Class">
+        <div class="class-content">
+          <h3>Fluffy Poori & Masala</h3>
+          <p>Learn to make puffed-up pooris and perfectly spiced potato masala – a kids’ favorite!</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 8 -->
+      <div class="class-card">
+        <img src="https://i.ytimg.com/vi/OcVhAszLMXc/maxresdefault.jpg" alt="Variety Rice Class">
+        <div class="class-content">
+          <h3>Variety Rice Specials</h3>
+          <p>Quick recipes like lemon rice, tamarind rice, and curd rice for festive and daily meals.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 9 -->
+      <div class="class-card">
+        <img src="https://pipingpotcurry.com/wp-content/uploads/2022/03/25-Indian-Snack-Recipes-Piping-Pot-Curry.jpg" alt="Snacks Class">
+        <div class="class-content">
+          <h3>Evening Snacks Delight</h3>
+          <p>From bajji and bonda to sunda kadalai – crunchy evening bites straight from Tamil kitchens.</p>
+          <button>Enroll Now</button>
+        </div>
+      </div>
+
+      <!-- Class 10 -->
+<div class="class-card">
+  <img src="https://livingsmartandhealthy.com/wp-content/uploads/2020/04/tiffin-sambar31-800x1200.jpg" alt="Tiffin Sambhar Class">
+  <div class="class-content">
+    <h3>Hotel-Style Tiffin Sambhar</h3>
+    <p>Learn how to prepare flavorful, watery sambhar that pairs perfectly with idli, dosa, and pongal.</p>
+    <button>Enroll Now</button>
+  </div>
+</div>
+
+<!-- Class 11 -->
+<div class="class-card">
+  <img src="https://tse4.mm.bing.net/th/id/OIP.vAdIL75Pdi_FkOpNGTyukwHaE8?pid=Api&P=0&h=180" alt="Chettinad Biryani Class">
+  <div class="class-content">
+    <h3>Chettinad Veg Biryani</h3>
+    <p>Cook aromatic Chettinad-style veg biryani using authentic spices and dum techniques.</p>
+    <button>Enroll Now</button>
+  </div>
+</div>
+
+<!-- Class 12 -->
+<div class="class-card">
+  <img src="https://www.currytrail.in/wp-content/uploads/2017/08/3-Chutney_2.jpg" alt="Chutney Varieties Class">
+  <div class="class-content">
+    <h3>Chutney Varieties</h3>
+    <p>Master 6+ chutneys including coconut, mint, tomato, and kara chutney for every tiffin need.</p>
+    <button>Enroll Now</button>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+
+
+</body>
+</html>

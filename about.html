@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Annapoorna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf2;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      background: url('https://wallpaperaccess.com/full/9109186.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(6, 4, 0);
+      font-size: 2.4rem;
+      text-shadow: 3px 3px 8px #000;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #ff6600;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .feature-card {
+      flex: 1 1 280px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 102, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .feature-card .text {
+      padding: 15px;
+    }
+
+    .feature-card h3 {
+      margin: 0;
+      color: #d35400;
+    }
+
+    .founder-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .founder-img {
+      flex: 1 1 300px;
+    }
+
+    .founder-img img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 102, 0, 0.2);
+    }
+
+    .founder-bio {
+      flex: 2 1 500px;
+    }
+
+    footer {
+      background-color: #ff6600;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        font-size: 1.6rem;
+        height: 200px;
+      }
+
+      .founder-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Annapoorna</h1>
+  </header>
+
+  <div class="hero">
+    ...Preserving Palani’s Taste – One Dish at a Time!...
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Our Story</h2>
+      <p>
+        <strong>Annapoorna</strong> was born in the heart of <strong>Palani</strong>, a temple town known for spiritual heritage and cultural richness. Inspired by the culinary legacy passed down through generations, we aim to bring the soul of South Indian kitchens into every home.
+      </p>
+      <p>
+        Our journey began with a small idea — to preserve traditional recipes and share them with the world. What started as a home-based passion project is now a growing platform that connects people with food, heritage, and community.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>
+        At Annapoorna, our mission is simple yet powerful:
+        <ul>
+          <li>💡 To simplify authentic cooking for everyone</li>
+          <li>🍛 To promote South Indian culinary traditions</li>
+          <li>🛍️ To provide tools & services that enhance kitchen experience</li>
+          <li>🌍 To connect food lovers across generations and geographies</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>What We Offer</h2>
+      <div class="features">
+        <div class="feature-card">
+          <img src="https://noplatelikehome.com/wp-content/uploads/IMG_3790-2048x1388.jpg" alt="Dosa Recipe">
+          <div class="text">
+            <h3>Authentic Recipes</h3>
+            <p>Step-by-step guidance for making traditional dishes like dosa, idli, pongal, and vada.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="https://foodsguy.com/wp-content/uploads/2020/11/The-Best-Utensils-For-Cooking-The-Ultimate-Guide.jpg" alt="Kitchen Tools">
+          <div class="text">
+            <h3>Handpicked Tools</h3>
+            <p>Shop the best kitchenware suited for South Indian cooking styles.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="https://a.cdn-hotels.com/gdcs/production12/d1365/9eb156d5-ef21-4c28-a0ee-b0b928e4748e.jpg" alt="Cooking Class">
+          <div class="text">
+            <h3>Online Cooking Classes</h3>
+            <p>Live or recorded sessions guided by experienced chefs and home cooks.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="https://www.myorangecrate.com/editable/images/user/icon-friendly-support.jpg" alt="Support">
+          <div class="text">
+            <h3>Friendly Support</h3>
+            <p>We help you with questions, suggestions, or custom class recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section founder-section">
+      <div class="founder-img">
+        <img src="https://media.assettype.com/indulgexpress/import/2018/5/4/original/ChefShriBala.jpg?w=1200&ar=40:21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100" alt="Founder">
+      </div>
+      <div class="founder-bio">
+        <h2>Meet the Founder</h2>
+        <p>
+          <strong>Mrs. Annapoorani Devi</strong>, a homemaker from Palani, founded Annapoorna with the vision of spreading her grandmother’s treasured recipes to the modern world. Her love for cooking and cultural roots drives the team every day to keep traditions alive in every home.
+        </p>
+        <p>
+          She believes that food is a language of love — and every spoonful of a homemade South Indian dish tells a story. Her goal is to ensure even beginners feel confident in the kitchen.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Annapoorna | Palani | South Indian Cooking
+  </footer>
+
+</body>
+</html>

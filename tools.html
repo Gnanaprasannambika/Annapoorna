@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kitchen Tools - Annapoorna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff7f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.4em;
+    }
+
+    .tool-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 10%;
+      gap: 30px;
+    }
+
+    .tool-section:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #fff0e6;
+    }
+
+    .tool-content {
+      flex: 1;
+    }
+
+    .tool-content h2 {
+      color: #ff6600;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .tool-content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .tool-image {
+      flex: 1;
+    }
+
+    .flip-container {
+      perspective: 1000px;
+    }
+
+    .flipper {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      transform-style: preserve-3d;
+      transition: 0.6s;
+    }
+
+    .flip-container:hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .front img, .back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Traditional Kitchen Tools</h1>
+    <p>Equip your kitchen the South Indian way 🍳</p>
+  </header>
+
+  <!-- Tool 1 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://farms2home.sg/wp-content/uploads/Dosa_Dynamic_cookware.png" alt="Iron Dosa Tawa Front">
+          </div>
+          <div class="back">
+            <img src="https://farms2home.sg/wp-content/uploads/Dosa_Dynamic_cookware.png" alt="Iron Dosa Tawa Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Iron Dosa Tawa</h2>
+      <p>This heavy-duty tawa is perfect for making crispy and authentic dosas. Retains heat well and gives a rustic flavor just like in traditional kitchens.</p>
+    </div>
+  </section>
+
+  <!-- Tool 2 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://m.media-amazon.com/images/I/71fmlGQShJL.jpg" alt="Idli Steamer Front">
+          </div>
+          <div class="back">
+            <img src="https://m.media-amazon.com/images/I/71fmlGQShJL.jpg" alt="Idli Steamer Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Stainless Steel Idli Steamer</h2>
+      <p>Make soft and fluffy idlis using this stackable steamer. A must-have for every South Indian household to start the day with a healthy breakfast.</p>
+    </div>
+  </section>
+
+  <!-- Tool 3 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://preview.redd.it/y9su8d2krw491.png?auto=webp&s=36e00c32489de16b96a54f128ac93d27be4a52ca" alt="Masala Box Front">
+          </div>
+          <div class="back">
+            <img src="https://preview.redd.it/y9su8d2krw491.png?auto=webp&s=36e00c32489de16b96a54f128ac93d27be4a52ca" alt="Masala Box Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Masala Dabba</h2>
+      <p>Store all your essential spices like mustard seeds, turmeric, cumin, and chili powder in this traditional masala box made from high-grade stainless steel.</p>
+    </div>
+  </section>
+
+  <!-- Tool 4 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://media.istockphoto.com/id/681580754/photo/stone-mill.jpg?s=612x612&w=0&k=20&c=0I4Xbzn3C28hNx9Pfk27VRRaGvDMNBISfCGzM3xi4KA=" alt="Stone Grinder Front">
+          </div>
+          <div class="back">
+            <img src="https://media.istockphoto.com/id/681580754/photo/stone-mill.jpg?s=612x612&w=0&k=20&c=0I4Xbzn3C28hNx9Pfk27VRRaGvDMNBISfCGzM3xi4KA=" alt="Stone Grinder Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Traditional Stone Grinder</h2>
+      <p>Used to grind fresh batter for idli, dosa, and chutneys. This grinder brings back the taste of stone-ground masalas and smooth chutneys with no preservatives.</p>
+    </div>
+  </section>
+
+  <!-- Tool 5 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://m.media-amazon.com/images/I/81plp2h7wkL._SL1500_.jpg" alt="Brass Uruli Front">
+          </div>
+          <div class="back">
+            <img src="https://m.media-amazon.com/images/I/81plp2h7wkL._SL1500_.jpg" alt="Brass Uruli Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Brass Uruli</h2>
+      <p>A decorative and functional bowl used for cooking payasam or serving traditional feasts. Adds a touch of heritage to your kitchen.</p>
+    </div>
+  </section>
+
+  <!-- Tool 6 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://m.media-amazon.com/images/I/81EEVVBungL._AC_SL1500_.jpg" alt="Paniyaram Pan Front">
+          </div>
+          <div class="back">
+            <img src="https://m.media-amazon.com/images/I/81EEVVBungL._AC_SL1500_.jpg" alt="Paniyaram Pan Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Cast Iron Paniyaram Pan</h2>
+      <p>Perfect for preparing soft and crispy kuzhi paniyarams. Traditional design ensures even cooking with minimal oil, preserving authentic taste.</p>
+    </div>
+  </section>
+
+  <!-- Tool 7 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://trustedshop.in/wp-content/uploads/2023/07/handheld-coconut-scraper.jpg" alt="Coconut Scraper Front">
+          </div>
+          <div class="back">
+            <img src="https://trustedshop.in/wp-content/uploads/2023/07/handheld-coconut-scraper.jpg" alt="Coconut Scraper Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Coconut Scraper</h2>
+      <p>Essential for South Indian recipes that rely on freshly grated coconut. This tabletop tool is easy to use and saves time in traditional cooking.</p>
+    </div>
+  </section>
+
+  <!-- Tool 8 -->
+  <section class="tool-section">
+    <div class="tool-image">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="https://velanstore.com/wp-content/uploads/2023/06/rat445.png" alt="Coffee Filter Front">
+          </div>
+          <div class="back">
+            <img src="https://velanstore.com/wp-content/uploads/2023/06/rat445.png" alt="Coffee Filter Back">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tool-content">
+      <h2>Brass Coffee Filter</h2>
+      <p>Enjoy the authentic South Indian filter coffee experience using this traditional brass filter. Brews strong and aromatic decoction perfectly.</p>
+    </div>
+  </section>
+
+ 
+</body>
+</html>

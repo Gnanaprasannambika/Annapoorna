@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>South Indian Dishes - Annapoorna</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff8f0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff7700;
+      margin-bottom: 30px;
+    }
+
+    .products-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product-card {
+      width: 280px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-tumb {
+      height: 200px;
+      background: #ffe6cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-tumb img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-catagory {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .product-details h4 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .product-details p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .product-bottom-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-price {
+      color: #ff7700;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      padding: 6px 12px;
+      background-color: #ff7700;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .buy-btn:hover {
+      background-color: #e66100;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍽️ SOUTH INDIAN DISHES</h1>
+
+  <div class="products-wrapper">
+
+    <!-- Dish 1 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2014/05/idli-sambar-1-500x500.jpg" alt="Idli Sambar">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Breakfast</span>
+        <h4>Idli with Sambar</h4>
+        <p>Steamed rice cakes served with spicy sambar and chutney.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹40</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 2 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://cdn3.didevelop.com/public/cdn/533_f5d2c53fba16a93a4f16687a0a0662d9.jpg" alt="Masala Dosa">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Tiffin</span>
+        <h4>Masala Dosa</h4>
+        <p>Crispy dosa filled with spicy potato masala and served with chutneys.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹55</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 3 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src=" https://im.rediff.com/travel-living/2015/apr/144302c33c547d28928409d18e3cf130093b56e8.jpg" alt="Medu Vada">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Snacks</span>
+        <h4>Medu Vada</h4>
+        <p>Deep-fried crispy vada made with urad dal, perfect with sambar.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹30</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 4 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/09/Lemon-Rice-Thumbnail-1024x1024.jpg" alt="Lemon Rice">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Lunch</span>
+        <h4>Lemon Rice</h4>
+        <p>Aromatic rice flavored with lemon juice, mustard seeds, and curry leaves.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹35</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 5 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://recipes.timesofindia.com/thumb/60781217.cms?imgsize=421653&width=800&height=800" alt="Sambar Sadam">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Meals</span>
+        <h4>Sambar Sadam</h4>
+        <p>Rice cooked with vegetables, dal and sambar spices, a wholesome meal.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹50</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 6 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://rasamayifoods.com/wp-content/uploads/2017/12/Curd-Rice.jpg" alt="Curd Rice">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Lunch</span>
+        <h4>Curd Rice</h4>
+        <p>Cooling rice mixed with curd, tempered with mustard and green chili.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹30</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/upma-recipe-2-500x500.jpg" alt="Upma">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Breakfast</span>
+        <h4>Rava Upma</h4>
+        <p>Light and savory semolina dish with veggies.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹40</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 10 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://images.slurrp.com/prod/recipe_images/transcribe/breakfast/Ven-pongal.webp" alt="Ven Pongal">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Tiffin</span>
+        <h4>Ven Pongal</h4>
+        <p>Hot rice & moong dal dish tempered with ghee.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹50</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 11 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://images.slurrp.com/prod/recipe_images/transcribe/main%20course/Onion-Uttapam.webp" alt="Uttapam">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Tiffin</span>
+        <h4>Onion Uttapam</h4>
+        <p>Thick dosa topped with onions & green chilies.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹45</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 12 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://www.cookwithkushi.com/wp-content/uploads/2022/09/temple_style_prasadam_naivedyam_recipe_03-1152x1536.jpg" alt="Sweet Pongal">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Sweets</span>
+        <h4>Sakkarai Pongal</h4>
+        <p>Delicious jaggery pongal with cashews & ghee.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹60</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 13 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://i2.wp.com/cookingwithpree.com/wp-content/uploads/2018/07/Mixed-veg-kootu-1.jpg?fit=4000%2C4162&ssl=1" alt="Kootu">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Side Dish</span>
+        <h4>Mixed Veg Kootu</h4>
+        <p>Traditional thick stew of lentils & veggies.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹55</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 14 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://tasteblends.ca/wp-content/uploads/2021/09/Rasam.jpg" alt="Rasam">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Soup</span>
+        <h4>Tomato Rasam</h4>
+        <p>Spicy & tangy tomato rasam with garlic.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹35</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 15 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://www.cookwithkushi.com/wp-content/uploads/2017/03/vegetable_korma_kurma_recipe-720x720.jpg" alt="Veg Kurma">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Gravy</span>
+        <h4>Veg Kurma</h4>
+        <p>Coconut-rich vegetable gravy served hot.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹60</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 16 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.Log2SkAaK73NKWjJ3Ag9GgHaIh?pid=Api&P=0&h=180" alt="Badam Halwa">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Dessert</span>
+        <h4>Badam Halwa</h4>
+        <p>Rich almond halwa made with ghee & saffron.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹80</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    
+     <!-- Dish 17 -->
+    <div class="product-card">
+      <div class="product-tumb">
+        <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/06/Crispy-Rava-Dosa-500x500.jpg" alt="Rava dosa">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Breakfast</span>
+        <h4>Rava Dosa</h4>
+        <p>Thin and crispy dosa made with semolina and spices, served with chutney.</p>
+        <div class="product-bottom-details">
+          <div class="product-price">₹90</div>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
