@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Annapoorna - South Indian Cooking</title>
+  <style>
+    :root {
+      --orange: #ff6f00;
+      --dark-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+    }
+
+    .navbar {
+      background-color: var(--orange);
+      padding: 12px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    #slider {
+      position: relative;
+      width: 800px;
+      height: 400px;
+      margin: 40px auto;
+      perspective: 1000px;
+    }
+
+    input[type=radio] {
+      display: none;
+    }
+
+    #slider label {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.5s ease;
+    }
+
+    #slider label img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Controls */
+    input#s1:checked ~ #slide1,
+    input#s2:checked ~ #slide2,
+    input#s3:checked ~ #slide3 {
+      z-index: 3;
+      transform: translate3d(0, 0, 0);
+    }
+
+    input#s1:checked ~ #slide2,
+    input#s2:checked ~ #slide3,
+    input#s3:checked ~ #slide1 {
+      transform: translate3d(20%, 0, -100px);
+    }
+
+    input#s1:checked ~ #slide3,
+    input#s2:checked ~ #slide1,
+    input#s3:checked ~ #slide2 {
+      transform: translate3d(-20%, 0, -100px);
+    }
+
+    input[type=radio] {
+      margin: 10px;
+    }
+
+    .main-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      align-items: center;
+      background: #fff;
+    }
+
+    .image-box {
+      flex: 1;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .text-box {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .text-box p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .heading {
+      text-align: center;
+      color: var(--orange);
+      margin: 50px 0 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: white;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-body h3 {
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+
+    .scroll-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 30px;
+    }
+
+    .product-box {
+      display: inline-block;
+      width: 240px;
+      margin-right: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .product-box img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .product-box p {
+      padding: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background-color: var(--dark-bg);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-column h4 {
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-column ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #555;
+      margin-top: 20px;
+      padding-top: 10px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Annapoorna</a>
+      <ul class="nav-links">
+        <li><a href="cook.html">Home</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="tools1.html">Tools</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <section id="slider">
+    <input type="radio" name="slider" id="s1" checked>
+    <input type="radio" name="slider" id="s2">
+    <input type="radio" name="slider" id="s3">
+
+    <label for="s1" id="slide1"><img src="https://thumbs.dreamstime.com/b/traditional-south-indian-thali-served-banana-leaf-rice-side-dishes-339996040.jpg" alt="Slide 1"></label>
+    <label for="s2" id="slide2"><img src="https://img.freepik.com/premium-photo/idly-sambar-idli-with-sambhar-green-red-chutney-popular-south-indian-breakfast_999766-2544.jpg" alt="Slide 2"></label>
+    <label for="s3" id="slide3"><img src="https://static.vecteezy.com/system/resources/previews/013/754/794/large_2x/south-indian-filter-coffee-served-in-a-traditional-brass-or-stainless-steel-cup-free-photo.jpg" alt="Slide 3"></label>
+  </section>
+
+  <!-- Welcome Section -->
+  <div class="main-section">
+    <div class="image-box">
+      <img src="https://png.pngtree.com/png-vector/20230213/ourlarge/pngtree-cooking-logo-png-image_6596638.png" alt="Kitchen">
+    </div>
+    <div class="text-box">
+      <p>
+       Welcome to Annapoorna – your ultimate destination for authentic South Indian culinary experiences. Rooted in the rich traditions of Tamil Nadu and inspired by the vibrant flavors of the south, Annapoorna brings the soul of home-cooked food right to your kitchen.
+
+From the crispy golden dosas that sizzle on a hot tawa to the soft, pillowy idlis steamed to perfection, every dish we showcase is a celebration of heritage and heartfelt cooking. We’re not just about food — we’re about stories, culture, and community.
+
+Explore our handpicked collection of traditional recipes passed down through generations, discover the essential kitchen tools that make South Indian cooking effortless, and immerse yourself in our live, interactive cooking classes led by experienced chefs.
+    </div>
+  </div>
+
+  <!-- Recipes -->
+  <h2 class="heading">Popular South Indian Recipes</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://b.zmtcdn.com/data/pictures/chains/6/19868166/d592342cbf1e9e65a88181ec984ac754.jpg" alt="Idli">
+      <div class="card-body">
+        <h3>Idli</h3>
+        <p>Soft, steamed rice cakes served with chutney and sambar.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://apollosugar.com/wp-content/uploads/2018/12/Masala-Dosa.jpg" alt="Dosa">
+      <div class="card-body">
+        <h3>Dosa</h3>
+        <p>Thin, crispy crepe filled with spicy potato masala.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.spiceindiaonline.com/wp-content/uploads/2014/01/Ven-Pongal-3.jpg" alt="Pongal">
+      <div class="card-body">
+        <h3>Ven Pongal</h3>
+        <p>Comforting rice-lentil dish flavored with ghee and pepper.</p>
+      </div>
+    </div>
+    <div class="card">
+  <img src="https://tse3.mm.bing.net/th/id/OIP.cfntQFWlJDxXgMTmomYfTgHaE8?pid=Api&P=0&h=180" alt="Veg Biryani">
+  <div class="card-body">
+    <h3>Veg Biryani</h3>
+    <p>Aromatic basmati rice cooked with mixed vegetables and fragrant spices.</p>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Products -->
+<h2 class="heading">Kitchen Tools & Services</h2>
+<div style="display: flex; justify-content: center;">
+  <div class="scroll-container">
+    <div class="product-box">
+      <img src="https://i.etsystatic.com/39704312/r/il/e8f922/5844356672/il_1080xN.5844356672_jzsy.jpg" alt="Idli Steamer">
+      <p>Brass idli steamer <br>
+        cook fluffy idlis at home.</p>
+    </div>
+    <div class="product-box">
+      <img src="https://www.freedomcart.com/image/cache/electronics/9abde8f4-2b44-4106-ad44-ea52b524ece0-700x700.jpg" alt="Dosa Tawa">
+      <p>Cast iron dosa tawa for <br>
+        perfect crispy golden dosas.</p>
+    </div>
+    <div class="product-box">
+      <img src="https://www.bombaydarbar.com/Pics/64699039.jpg" alt="Spices">
+      <p>Fresh spice kits sambar powder, <br>
+         rasam mix, and more.</p>
+    </div>
+    <div class="product-box">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.RypfSf8m8XBDdjOHSv_NMQHaE8?pid=Api&P=0&h=180" alt="Cooking Class">
+      <p>Join live South Indian cooking  <br>
+        classes with our chefs.</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Annapoorna</h4>
+        <p>South Indian cooking with love, from the heart of Palani.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="cook.html">Home</a></li>
+          <li><a href="dishes.html">Dishes</a></li>
+          <li><a href="tools1.html">Tools</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>📞 +91 98765 43210<br>
+           ✉️ contact@annapoorna.com<br>
+           📍 Palani, Tamil Nadu</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Annapoorna
+    </div>
+  </footer>
+</body>
+</html>
